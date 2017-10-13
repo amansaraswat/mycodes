@@ -3,6 +3,8 @@ import java.util.*;
 class CompareSign{
 public static void main(String as[])
 {
+ try
+ {
  Scanner ob=new Scanner(System.in);
  int a=ob.nextInt();
  char s=a>0?'p':'n';
@@ -11,5 +13,9 @@ public static void main(String as[])
    System.out.println("z");
  else
   System.out.println(s);
+ }catch(Exception e)
+ {
+   System.out.println(e);
+ }
 }
 }
