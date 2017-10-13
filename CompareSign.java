@@ -15,7 +15,7 @@ public static void main(String as[])
   System.out.println(s);
  }catch(Exception e)
  {
-   System.out.println(e);
+   System.out.println("enter valid input please");
  }
 }
 }
