@@ -1,0 +1,39 @@
+/*Given a string,S, of length N that is indexed 0 from N-1 to 0, print its even-indexed and odd-indexed characters as
+2 space-separated strings on a single line*/ 
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int tc=scan.nextInt();
+        int t=tc,n,j=0;
+        String[] str=new String[t];
+        String str1,str2;
+        
+        for(int i=0;i<tc;i++)
+        {
+            str[i]=scan.next();
+        }
+        while(t!=0)
+        {
+            n=str[j].length();
+            str1=str2="";
+            
+            for(int k=0;k<n;k++)
+            {
+                if(k%2==0)
+                    str1+=str[j].charAt(k);
+                else
+                    str2+=str[j].charAt(k);
+            }
+            System.out.println(str1+" "+str2);
+            t--;
+            j++;
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    } 
+}
