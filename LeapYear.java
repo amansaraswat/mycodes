@@ -12,21 +12,21 @@ class LeapYear
 			{
 				if(year%400==0)
 				{
-					System.out.print("leap year");
+					System.out.print("yes");
 				}
 				else
 				{
-					System.out.println("not leap year");
+					System.out.println("no");
 				}
 			}
 			else
 			{
-				System.out.println("leap year");
+				System.out.println("yes");
 			}
 		}
 		else
 		{
-			System.out.println("not leap year");
+			System.out.println("no");
 		}
 	}
 	
