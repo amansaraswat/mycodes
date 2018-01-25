@@ -17,7 +17,7 @@ class Natural
 		System.out.println(sum);
     }
     else
-     Syatem.out.println("invalid input");
+     System.out.println("invalid input");
  	}
 	
 }
